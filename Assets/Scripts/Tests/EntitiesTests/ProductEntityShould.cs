@@ -11,7 +11,7 @@ public class ProductEntityShould
     [SetUp]
     public void SetUp()
     {
-        product = new ProductEntity(ProductsEnum.VIEIRA);
+        product = new ProductEntity(ProductsEnum.VIEIRA,50);
         product.SetPriceForCity(500, CitiesEnum.MADRID);
         product.SetPriceForCity(450, CitiesEnum.BARCELONA);
         product.SetPriceForCity(600, CitiesEnum.LISBOA);

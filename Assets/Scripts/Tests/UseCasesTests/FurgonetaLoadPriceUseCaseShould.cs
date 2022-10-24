@@ -14,7 +14,7 @@ public class FurgonetaLoadPriceUseCaseShould
         };
     // A Test behaves as an ordinary method
     [Test]
-    public void FurgonetaLoadPriceUseCaseShouldSimplePasses([ValueSource("expectedAndDistances")]Tuple<int,int> expectedAndDistance)
+    public void ExpectExpenseForDistanceKm([ValueSource("expectedAndDistances")]Tuple<int,int> expectedAndDistance)
     {
         FurgonetaLoadPriceUseCase useCase = new FurgonetaLoadPriceUseCase();
         int expectedPrice = expectedAndDistance.Item1;
