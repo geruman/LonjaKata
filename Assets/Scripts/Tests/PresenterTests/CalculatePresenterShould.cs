@@ -10,7 +10,7 @@ public class CalculatePresenterShould
     private CalculatePresenter _presenter;
     private IFindPreferredCityUseCase _findPreferredCityUseCase;
     private IProductRepository _productRepository;
-    private string stringBase = "La ciudad preferida para vieiras es ";
+    private string stringBase = "La ciudad preferida para ";
     public ICalculateView calculateView { get; private set; }
 
     [SetUp]
@@ -29,21 +29,21 @@ public class CalculatePresenterShould
     public void CalculatePreferredCityForVieiras()
     {
         _presenter.CalculatePreferredCities();
-        calculateView.Received().UpdateVieiraText(stringBase+CitiesEnum.BARCELONA);
+        calculateView.Received().UpdateVieiraText(stringBase+ProductsEnum.VIEIRA+" es: "+CitiesEnum.BARCELONA);
     }
 
     [Test]
     public void CalculatePreferredCityForPulpo()
     {
         _presenter.CalculatePreferredCities();
-        calculateView.Received().UpdatePulpoText(stringBase+CitiesEnum.MADRID);
+        calculateView.Received().UpdatePulpoText(stringBase+ProductsEnum.PULPO+" es: "+CitiesEnum.MADRID);
     }
 
     [Test]
     public void CalculatePreferredCityForCentollo()
     {
         _presenter.CalculatePreferredCities();
-        calculateView.Received().UpdateCentolloText(stringBase+CitiesEnum.LISBOA);
+        calculateView.Received().UpdateCentolloText(stringBase+ProductsEnum.CENTOLLO+" es: "+CitiesEnum.LISBOA);
     }
 
 }

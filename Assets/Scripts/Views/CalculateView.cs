@@ -14,32 +14,33 @@ public class CalculateView : MonoBehaviour, ICalculateView
     private Text centollaText;
     [SerializeField]
     private DataScriptableObject repositoriesLocator;
-    private FindPreferredCityUseCase _preferredCityUseCase;
+    private CalculatePresenter _calculatePresenter;
     public void Start()
     {
         var depretiationUseCase = new DepretiationUseCase();
         var furgonetaLoadPriceUseCase = new FurgonetaLoadPriceUseCase();
         var earningsUseCase = new EarningsForGivenProductAndCityUseCase(depretiationUseCase,furgonetaLoadPriceUseCase);
-        _preferredCityUseCase = new FindPreferredCityUseCase(earningsUseCase, repositoriesLocator.CityRepository,repositoriesLocator.ProductRepository);
+        var preferredCityUseCase = new FindPreferredCityUseCase(earningsUseCase, repositoriesLocator.CityRepository,repositoriesLocator.ProductRepository);
+        _calculatePresenter = new CalculatePresenter(this, preferredCityUseCase);
     }
 
     public void PerformCalculations()
     {
-        //vieirasText.text = repositoriesLocator.ProductRepository.Get(productEnum.);
+        _calculatePresenter.CalculatePreferredCities();
     }
 
     public void UpdateVieiraText(string text)
     {
-        throw new System.NotImplementedException();
+        vieirasText.text = text;
     }
 
     public void UpdatePulpoText(string text)
     {
-        throw new System.NotImplementedException();
+        pulpoText.text = text;
     }
 
     public void UpdateCentolloText(string text)
     {
-        throw new System.NotImplementedException();
+        centollaText.text = text;
     }
 }

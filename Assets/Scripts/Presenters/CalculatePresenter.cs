@@ -20,10 +20,10 @@ public class CalculatePresenter
         var preferredForVieiras = _findPreferredCityUseCase.CalculatePreferredCityFor(ProductsEnum.VIEIRA);
         var preferredForCentollo = _findPreferredCityUseCase.CalculatePreferredCityFor(ProductsEnum.CENTOLLO);
         var preferredForPulpo = _findPreferredCityUseCase.CalculatePreferredCityFor(ProductsEnum.PULPO);
-        var textoBase = "La ciudad preferida para vieiras es ";
-        _calculateView.UpdateVieiraText(textoBase+preferredForVieiras);
-        _calculateView.UpdatePulpoText(textoBase+preferredForPulpo);
-        _calculateView.UpdateCentolloText(textoBase+preferredForCentollo);
+        var textoBase = "La ciudad preferida para ";
+        _calculateView.UpdateVieiraText(textoBase+ProductsEnum.VIEIRA+" es: "+preferredForVieiras);
+        _calculateView.UpdatePulpoText(textoBase+ProductsEnum.PULPO+" es: "+preferredForPulpo);
+        _calculateView.UpdateCentolloText(textoBase+ProductsEnum.CENTOLLO+" es: "+preferredForCentollo);
 
     }
 }
