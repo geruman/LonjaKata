@@ -1,4 +1,4 @@
 ﻿public interface IProductRepository
 {
-    ProductEntity GetProduct(ProductsEnum productEnum);
+    ProductEntity Get(ProductsEnum productEnum);
 }

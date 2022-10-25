@@ -5,18 +5,29 @@ using UnityEngine;
 
 public class FindPreferredCityUseCase
 {
-    IDepretiationUseCase _depretiationUseCase;
-    IFurgonetaLoadPriceUseCase _furgonetaUseCase;
-    public FindPreferredCityUseCase(IDepretiationUseCase depretiationUseCase, IFurgonetaLoadPriceUseCase furgonetaUseCase)
+    private EarningsForGivenProductAndCityUseCase _earningsForGivenProductAndCityUseCase;
+
+    public FindPreferredCityUseCase(EarningsForGivenProductAndCityUseCase earningsForGivenProductAndCityUseCase)
     {
-        _depretiationUseCase = depretiationUseCase;
-        _furgonetaUseCase = furgonetaUseCase;
+        _earningsForGivenProductAndCityUseCase = earningsForGivenProductAndCityUseCase;
     }
 
-    public CitiesEnum CalculatePreferredCityFor(ProductsEnum producto)
+    public CitiesEnum CalculatePreferredCityFor(ProductEntity producto)
     {
 
-        return CitiesEnum.MADRID;
+        var madridPrice = _earningsForGivenProductAndCityUseCase.CalculateFinalPriceForProductInCity(producto, CitiesEnum.MADRID);
+        var barcelonaPrice = _earningsForGivenProductAndCityUseCase.CalculateFinalPriceForProductInCity(producto, CitiesEnum.BARCELONA);
+        var lisboaPrice = _earningsForGivenProductAndCityUseCase.CalculateFinalPriceForProductInCity(producto, CitiesEnum.LISBOA);
+        if (madridPrice>=barcelonaPrice&&madridPrice>=lisboaPrice)
+        {
+            return CitiesEnum.MADRID;
+        }
+        if (barcelonaPrice>=madridPrice&&barcelonaPrice>=lisboaPrice)
+        {
+            return CitiesEnum.BARCELONA;
+        }
+        return CitiesEnum.LISBOA;
+
 
     }
 }
