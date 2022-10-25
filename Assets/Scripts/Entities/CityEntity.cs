@@ -1,10 +1,10 @@
 ﻿public class CityEntity
 {
-    public CitiesEnum Name { private set; get; }
+    public CitiesEnum EnumId { private set; get; }
     public int Distance { private set; get; }
     public CityEntity(CitiesEnum name, int distance)
     {
-        Name=name;
+        EnumId=name;
         Distance=distance;
     }
 }

@@ -5,7 +5,7 @@ public class EarningsForGivenProductAndCityUseCase
     private ICityRepository _cityRepository;
     private DepretiationUseCase _depretiationUseCase;
     private FurgonetaLoadPriceUseCase _furgonetaLoadPriceUseCase;
-    public EarningsForGivenProductAndCityUseCase(IProductRepository productRepository,ICityRepository cityRepository, DepretiationUseCase depretiationUseCase, FurgonetaLoadPriceUseCase furgonetaLoadPriceUseCase)
+    public EarningsForGivenProductAndCityUseCase(ICityRepository cityRepository, DepretiationUseCase depretiationUseCase, FurgonetaLoadPriceUseCase furgonetaLoadPriceUseCase)
     {
         _cityRepository = cityRepository;
         _depretiationUseCase=depretiationUseCase;

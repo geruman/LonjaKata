@@ -14,13 +14,9 @@ public class FindPreferredCityUseCaseShould
     public void SetUp()
     {
         //GIVEN
-        var productRepository = Substitute.For<IProductRepository>();
+        
         var cityRepository = Substitute.For<ICityRepository>();
-        var productVieira = new ProductEntity(ProductsEnum.VIEIRA, 50);
-        productVieira.SetPriceForCity(500, CitiesEnum.MADRID);
-        productVieira.SetPriceForCity(450, CitiesEnum.BARCELONA);
-        productVieira.SetPriceForCity(600, CitiesEnum.LISBOA);
-        productRepository.Get(ProductsEnum.VIEIRA).Returns(productVieira);
+        
         var cityMadrid = new CityEntity(CitiesEnum.MADRID, 800);
         cityRepository.Get(CitiesEnum.MADRID).Returns(cityMadrid);
         var cityBarcelona = new CityEntity(CitiesEnum.BARCELONA, 1100);
@@ -29,7 +25,7 @@ public class FindPreferredCityUseCaseShould
         cityRepository.Get(CitiesEnum.LISBOA).Returns(cityLisboa);
         DepretiationUseCase depretiationUseCase = new DepretiationUseCase();
         FurgonetaLoadPriceUseCase furgonetaLoadPriceUseCase = new FurgonetaLoadPriceUseCase();
-        EarningsForGivenProductAndCityUseCase earningsForGivenProductAndCityUseCase = new EarningsForGivenProductAndCityUseCase(productRepository,cityRepository, depretiationUseCase, furgonetaLoadPriceUseCase);
+        EarningsForGivenProductAndCityUseCase earningsForGivenProductAndCityUseCase = new EarningsForGivenProductAndCityUseCase(cityRepository, depretiationUseCase, furgonetaLoadPriceUseCase);
         _studyUseCase = new FindPreferredCityUseCase(earningsForGivenProductAndCityUseCase);
     }
     [Test]

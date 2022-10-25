@@ -1,0 +1,17 @@
+{
+    "name": "RepositoryImplementation",
+    "rootNamespace": "",
+    "references": [
+        "GUID:170e2f8d0024d0147b84960ab1fb15fb",
+        "GUID:399237257ad03124c9ced3945b4ae024"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
