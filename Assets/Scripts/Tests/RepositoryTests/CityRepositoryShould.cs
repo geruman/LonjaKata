@@ -10,19 +10,19 @@ public class CityRepositoryShould
     [Test]
     public void ReturnMadridWhenAsked()
     {
-        CityRepository repo = new CityRepository();
+        InMemoryCityRepository repo = new InMemoryCityRepository();
         Assert.AreEqual(CitiesEnum.MADRID, repo.Get(CitiesEnum.MADRID).EnumId);
     }
     [Test]
     public void ReturnBarcelonaWhenAsked()
     {
-        CityRepository repo = new CityRepository();
+        InMemoryCityRepository repo = new InMemoryCityRepository();
         Assert.AreEqual(CitiesEnum.BARCELONA, repo.Get(CitiesEnum.BARCELONA).EnumId);
     }
     [Test]
     public void ReturnLisboaWhenAsked()
     {
-        CityRepository repo = new CityRepository();
+        InMemoryCityRepository repo = new InMemoryCityRepository();
         Assert.AreEqual(CitiesEnum.LISBOA, repo.Get(CitiesEnum.LISBOA).EnumId);
     }
 

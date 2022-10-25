@@ -32,12 +32,12 @@ public class EarningsForGivenProductAndCityUseCaseShould
         productVieira.SetPriceForCity(450, CitiesEnum.BARCELONA);
         productVieira.SetPriceForCity(600, CitiesEnum.LISBOA);
 
-        EarningsForGivenProductAndCityUseCase useCase = new EarningsForGivenProductAndCityUseCase( cityRepository, new DepretiationUseCase(), new FurgonetaLoadPriceUseCase());
+        EarningsForGivenProductAndCityUseCase useCase = new EarningsForGivenProductAndCityUseCase( new DepretiationUseCase(), new FurgonetaLoadPriceUseCase());
 
         CitiesEnum citiesEnum = cityAndPrice.Item1;
         decimal expectedFinalPrice = cityAndPrice.Item2;
         //WHEN cuando pasan x cosas
-        decimal finalPrice = useCase.CalculateFinalPriceForProductInCity(productVieira, citiesEnum);
+        decimal finalPrice = useCase.CalculateFinalPriceForProductInCity(productVieira, cityRepository.Get(citiesEnum));
         //THEN el resultado deberiá
         Assert.AreEqual(expectedFinalPrice, finalPrice);
 

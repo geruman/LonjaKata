@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CityRepository : ICityRepository
+public class InMemoryCityRepository : ICityRepository
 {
     private Dictionary<CitiesEnum, CityEntity> _cities;
 
-    public CityRepository()
+    public InMemoryCityRepository()
     {
         _cities = new Dictionary<CitiesEnum, CityEntity>();
         var madrid = new CityEntity(CitiesEnum.MADRID, 800);

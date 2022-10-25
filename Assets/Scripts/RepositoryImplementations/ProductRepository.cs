@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Data;
 using UnityEngine;
 
-public class ProductRepository : IProductRepository
+public class InMemoryProductRepository : IProductRepository
 {
     private Dictionary<ProductsEnum, ProductEntity> _products;
 
-    public ProductRepository()
+    public InMemoryProductRepository()
     {
         _products = new Dictionary<ProductsEnum,ProductEntity>();
         var vieira = new ProductEntity(ProductsEnum.VIEIRA, 50);
@@ -18,12 +18,12 @@ public class ProductRepository : IProductRepository
         pulpo.SetPriceForCity(0, CitiesEnum.MADRID);
         pulpo.SetPriceForCity(120, CitiesEnum.BARCELONA);
         pulpo.SetPriceForCity(100, CitiesEnum.LISBOA);
-        var centolla = new ProductEntity(ProductsEnum.CENTOLLA, 50);
+        var centolla = new ProductEntity(ProductsEnum.CENTOLLO, 50);
         centolla.SetPriceForCity(0, CitiesEnum.MADRID);
         centolla.SetPriceForCity(120, CitiesEnum.BARCELONA);
         centolla.SetPriceForCity(100, CitiesEnum.LISBOA);
         _products.Add(ProductsEnum.VIEIRA, vieira);
-        _products.Add(ProductsEnum.CENTOLLA, centolla);
+        _products.Add(ProductsEnum.CENTOLLO, centolla);
         _products.Add(ProductsEnum.PULPO, pulpo);
 
     }

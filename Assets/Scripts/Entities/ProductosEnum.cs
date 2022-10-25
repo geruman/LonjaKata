@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum ProductsEnum
 {
-    VIEIRA, PULPO, CENTOLLA
+    VIEIRA, PULPO, CENTOLLO
 }

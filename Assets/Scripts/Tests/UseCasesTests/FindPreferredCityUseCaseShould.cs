@@ -7,7 +7,7 @@ using UnityEngine.TestTools;
 
 public class FindPreferredCityUseCaseShould
 {
-    private FindPreferredCityUseCase _studyUseCase;
+    private FindPreferredCityUseCase _findPreferredCityUseCase;
    
 
     [SetUp]
@@ -23,47 +23,50 @@ public class FindPreferredCityUseCaseShould
         cityRepository.Get(CitiesEnum.BARCELONA).Returns(cityBarcelona);
         var cityLisboa = new CityEntity(CitiesEnum.LISBOA, 600);
         cityRepository.Get(CitiesEnum.LISBOA).Returns(cityLisboa);
+        var productRepository = Substitute.For<IProductRepository>();
+        var vieiraProduct = new ProductEntity(ProductsEnum.VIEIRA, 50);
+        vieiraProduct.SetPriceForCity(500, CitiesEnum.MADRID);
+        vieiraProduct.SetPriceForCity(450, CitiesEnum.BARCELONA);
+        vieiraProduct.SetPriceForCity(600, CitiesEnum.LISBOA);
+        var pulpoProduct = new ProductEntity(ProductsEnum.PULPO, 100);
+        pulpoProduct.SetPriceForCity(0, CitiesEnum.MADRID);
+        pulpoProduct.SetPriceForCity(120, CitiesEnum.BARCELONA);
+        pulpoProduct.SetPriceForCity(100, CitiesEnum.LISBOA);
+        var centolloProduct = new ProductEntity(ProductsEnum.CENTOLLO, 50);
+        centolloProduct.SetPriceForCity(450, CitiesEnum.MADRID);
+        centolloProduct.SetPriceForCity(0, CitiesEnum.BARCELONA);
+        centolloProduct.SetPriceForCity(500, CitiesEnum.LISBOA);
+        productRepository.Get(ProductsEnum.VIEIRA).Returns(vieiraProduct);
+        productRepository.Get(ProductsEnum.PULPO).Returns(pulpoProduct);
+        productRepository.Get(ProductsEnum.CENTOLLO).Returns(centolloProduct);
         DepretiationUseCase depretiationUseCase = new DepretiationUseCase();
         FurgonetaLoadPriceUseCase furgonetaLoadPriceUseCase = new FurgonetaLoadPriceUseCase();
-        EarningsForGivenProductAndCityUseCase earningsForGivenProductAndCityUseCase = new EarningsForGivenProductAndCityUseCase(cityRepository, depretiationUseCase, furgonetaLoadPriceUseCase);
-        _studyUseCase = new FindPreferredCityUseCase(earningsForGivenProductAndCityUseCase);
+        EarningsForGivenProductAndCityUseCase earningsForGivenProductAndCityUseCase = new EarningsForGivenProductAndCityUseCase(depretiationUseCase, furgonetaLoadPriceUseCase);
+        _findPreferredCityUseCase = new FindPreferredCityUseCase(earningsForGivenProductAndCityUseCase,cityRepository,productRepository);
     }
     [Test]
     public void RespondMadridForVieiras()
     {
-        //GIVEN
-        var productVieira = new ProductEntity(ProductsEnum.VIEIRA, 50);
-        productVieira.SetPriceForCity(500, CitiesEnum.MADRID);
-        productVieira.SetPriceForCity(450, CitiesEnum.BARCELONA);
-        productVieira.SetPriceForCity(600, CitiesEnum.LISBOA);
         //WHEN
-        var preferredCity = _studyUseCase.CalculatePreferredCityFor(productVieira);
+        var preferredCity = _findPreferredCityUseCase.CalculatePreferredCityFor(ProductsEnum.VIEIRA);
         //THEN
         Assert.AreEqual(CitiesEnum.LISBOA, preferredCity);
     }
     [Test]
     public void RespondBarcelonaForPulpo()
     {
-        //GIVEN
-        var productPulpo = new ProductEntity(ProductsEnum.PULPO, 100);
-        productPulpo.SetPriceForCity(0, CitiesEnum.MADRID);
-        productPulpo.SetPriceForCity(120, CitiesEnum.BARCELONA);
-        productPulpo.SetPriceForCity(100, CitiesEnum.LISBOA);
+        
         //WHEN
-        var preferredCity = _studyUseCase.CalculatePreferredCityFor(productPulpo);
+        var preferredCity = _findPreferredCityUseCase.CalculatePreferredCityFor(ProductsEnum.PULPO);
         //THEN
         Assert.AreEqual(CitiesEnum.BARCELONA, preferredCity);
     }
     [Test]
     public void RespondLisboaForCentolla()
     {
-        //GIVEN
-        var productCentolla = new ProductEntity(ProductsEnum.PULPO, 50);
-        productCentolla.SetPriceForCity(450, CitiesEnum.MADRID);
-        productCentolla.SetPriceForCity(0, CitiesEnum.BARCELONA);
-        productCentolla.SetPriceForCity(500, CitiesEnum.LISBOA);
+        
         //WHEN
-        var preferredCity = _studyUseCase.CalculatePreferredCityFor(productCentolla);
+        var preferredCity = _findPreferredCityUseCase.CalculatePreferredCityFor(ProductsEnum.CENTOLLO);
         //THEN
         Assert.AreEqual(CitiesEnum.LISBOA, preferredCity);
     }
