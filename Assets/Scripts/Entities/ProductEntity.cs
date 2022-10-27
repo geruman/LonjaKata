@@ -14,7 +14,15 @@ public class ProductEntity
     }
     public void SetPriceForCity(int price, CitiesEnum city)
     {
-        _cityPrice.Add(city, price);
+        if (_cityPrice.ContainsKey(city))
+        {
+            _cityPrice[city] = price;
+
+        }
+        else
+        {
+            _cityPrice.Add(city, price);
+        }
     }
     public int GetPriceForCity(CitiesEnum city)
     {

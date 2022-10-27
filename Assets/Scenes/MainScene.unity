@@ -688,6 +688,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393252076}
   m_CullTransparentMesh: 1
+--- !u!114 &438403502 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+  m_PrefabInstance: {fileID: 1809084484907336259}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,6 +1019,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624973986}
   m_CullTransparentMesh: 1
+--- !u!114 &755653087 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+  m_PrefabInstance: {fileID: 1777306953}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &786095921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,6 +1180,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810499771}
   m_CullTransparentMesh: 1
+--- !u!114 &865928463 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+  m_PrefabInstance: {fileID: 1777306953}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &876635337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1314,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918641885}
   m_CullTransparentMesh: 1
+--- !u!114 &939634981 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+  m_PrefabInstance: {fileID: 1809084484907336259}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &967349058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,6 +1595,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078748773}
   m_CullTransparentMesh: 1
+--- !u!114 &1143857586 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+  m_PrefabInstance: {fileID: 1927897141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1194052423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,6 +1892,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201776430}
   m_CullTransparentMesh: 1
+--- !u!114 &1261973942 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+  m_PrefabInstance: {fileID: 1927897141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1320766924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,6 +1915,7 @@ GameObject:
   - component: {fileID: 1320766928}
   - component: {fileID: 1320766927}
   - component: {fileID: 1320766926}
+  - component: {fileID: 1320766929}
   m_Layer: 5
   m_Name: ProductsPanel
   m_TagString: Untagged
@@ -1947,6 +2014,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320766924}
   m_CullTransparentMesh: 1
+--- !u!114 &1320766929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320766924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b21114340a6ff40834cb7b3d58aeb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _repositoriesLocator: {fileID: 11400000, guid: 7333ca6c6d989a4438e6fe548591d849, type: 2}
+  madridVieira: {fileID: 438403502}
+  madridPulpo: {fileID: 939634981}
+  madridCentollo: {fileID: 1975713882}
+  barcelonaVieira: {fileID: 755653087}
+  barcelonaPulpo: {fileID: 865928463}
+  barcelonaCentollo: {fileID: 1970639259}
+  lisboaVieira: {fileID: 1261973942}
+  lisboaPulpo: {fileID: 1143857586}
+  lisboaCentollo: {fileID: 1466761246}
+--- !u!114 &1466761246 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+  m_PrefabInstance: {fileID: 1927897141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1544282894
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,6 +2355,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1320766929}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateBarcelonaPulpoPrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PricesView, Views
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1809084485889132418, guid: 06f110c273266c340a107e1d6f880483, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2274,6 +2402,34 @@ PrefabInstance:
     - target: {fileID: 1809084485889132418, guid: 06f110c273266c340a107e1d6f880483, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1320766929}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateBarcelonaCentollaPrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PricesView, Views
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1809084486175789926, guid: 06f110c273266c340a107e1d6f880483, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2402,6 +2558,34 @@ PrefabInstance:
     - target: {fileID: 1809084486848236624, guid: 06f110c273266c340a107e1d6f880483, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1320766929}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateBarcelonaVieiraPrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PricesView, Views
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06f110c273266c340a107e1d6f880483, type: 3}
@@ -2653,6 +2837,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1320766929}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateLisboaPulpoPrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PricesView, Views
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1809084485889132418, guid: 06f110c273266c340a107e1d6f880483, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2672,6 +2884,34 @@ PrefabInstance:
     - target: {fileID: 1809084485889132418, guid: 06f110c273266c340a107e1d6f880483, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1320766929}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateLisboaCentollaPrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PricesView, Views
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1809084486175789926, guid: 06f110c273266c340a107e1d6f880483, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2801,8 +3041,58 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1320766929}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateLisboaVieiraPrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PricesView, Views
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+--- !u!114 &1970639259 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+  m_PrefabInstance: {fileID: 1777306953}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1975713882 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+  m_PrefabInstance: {fileID: 1809084484907336259}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2042367595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2954,6 +3244,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1320766929}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateMadridPulpoPrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PricesView, Views
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084485889132417, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1809084485889132418, guid: 06f110c273266c340a107e1d6f880483, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2973,6 +3291,34 @@ PrefabInstance:
     - target: {fileID: 1809084485889132418, guid: 06f110c273266c340a107e1d6f880483, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1320766929}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateMadridCentolloPrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PricesView, Views
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486175789925, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1809084486175789926, guid: 06f110c273266c340a107e1d6f880483, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3101,6 +3447,34 @@ PrefabInstance:
     - target: {fileID: 1809084486848236624, guid: 06f110c273266c340a107e1d6f880483, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1320766929}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateMadridVieiraPrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PricesView, Views
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809084486848236631, guid: 06f110c273266c340a107e1d6f880483, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06f110c273266c340a107e1d6f880483, type: 3}
