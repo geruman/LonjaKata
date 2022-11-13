@@ -58,8 +58,15 @@ public class PricesView : MonoBehaviour, IPricesView
 
     public void UpdateMadridVieiraPrice()
     {
-        int value = int.Parse(madridVieira.text);
-        _presenter.UpdatePriceForProductInCity(value, ProductsEnum.VIEIRA, CitiesEnum.MADRID);
+        int value;
+        if (int.TryParse(madridVieira.text, out value)&&value>=0)
+        {
+            _presenter.UpdatePriceForProductInCity(value, ProductsEnum.VIEIRA, CitiesEnum.MADRID);
+        }
+        else
+        {
+            ShowErrorMessage("El valor de la vieira debe ser un número entero igual o superior a 0");
+        }
     }
     public void UpdateMadridPulpoPrice()
     {
